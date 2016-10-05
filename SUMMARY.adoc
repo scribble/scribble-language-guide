@@ -1,0 +1,7 @@
+= Summary
+
+. link:first/README.adoc[First Section]
+.. link:first/SUB1.adoc[Sub Section 1]
+. link:second/README.adoc[Second Section]
+.. link:second/SUB2.adoc[Sub Section 2]
+
