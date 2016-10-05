@@ -1,7 +1,0 @@
-:toc: macro
-:toc-title:
-
-toc::[]
-
-== SUB1
-
