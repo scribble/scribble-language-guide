@@ -1,0 +1,40 @@
+= How to contribute to the Scribble Language Guide
+
+The source for the Scribble Language Guide uses asciidoc format, and is converted to a web page (and PDF) using
+https://www.gitbook.com[gitbook].
+
+== Obtaining a copy of the language guide
+
+First step is to fork the https://github.com/scribble/scribble-language-guide[github repository] and clone it
+onto your local machine.
+
+----
+git clone git@github.com:<your-username>/scribble-language-guide.git
+----
+
+== Install gitbook tools
+
+To enable changes made locally to be checked, before being committed back to the git repository, you will need to
+install the http://toolchain.gitbook.com/setup.html[gitbook tools].
+
+Once installed, you will be able to open a command window in the root folder of the scribble language guide repo (clone)
+and type:
+
+----
+gitbook serve
+----
+
+This will watch the repository for changes, and present them as a web page located at: http://localhost:4000
+
+== Edit the content
+
+Before making changes to the content, you should create a new branch which can be used to submit a Pull Request (PR)
+back to the main repository for review.
+
+The structure of the book, using asciidoc, is explained https://toolchain.gitbook.com/syntax/asciidoc.html[here].
+
+Information about the asciidoc format can be found http://asciidoctor.org/docs/asciidoc-writers-guide/[here].
+
+
+
+
