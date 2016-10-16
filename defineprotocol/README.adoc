@@ -38,7 +38,6 @@ The role names used in the +from+ and +to+ clauses must have previously been def
 
 TIP: Although described as two separate statements, this simple pattern can be used to represent a request/response interaction between the two parties (roles). If this is the intention, then when defining the protocol it is recommended that the operation name be the same on both statements.
 
-
 === Adding Decision Points
 
 The previous section introduced a simple protocol which involved a sequence of two interactions (or message transfers). Most protocols involve some decision points which result in the protocol having a different behaviour.
@@ -100,7 +99,6 @@ To ensure that the other (non-decision making) roles correctly infer which path 
 
 NOTE: Protocols where the decision is conveyed within the message contents is not currently handled by this version of Scribble.
 
-
 === Concurrency
 
 This section will discuss how protocols can be defined where behaviour can be performed concurrently (i.e. in parallel). We will extend the previous example by adding some new roles, and a parallel construct to check concurrently whether the buyer's credit is acceptible and if there is enough stock to satisfy the quote. 
@@ -143,7 +141,6 @@ global protocol BuyGoods (role Buyer, role Seller, role CreditAgency, role Store
 Each of the paths defined within the par construct are expected to occur concurrently. The protocol will not progress past the par construct until each of the paths within the par have completed.
 
 NOTE: To avoid potential conflicts between message exchanges in the concurrent paths, it is currently necessary to use distinct operator names between role pairs in different paths. So (for example), in the above example, the second path could not use 'creditCheck' as an operator.
-
 
 === Recursion
 
